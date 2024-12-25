@@ -5,6 +5,9 @@
 // In the given linked list, there is a cycle, hence we return true
 
 
+
+// We can Hashmap for bruteforce Approach
+// Optimal Approach
 public class Solution {
     public static boolean detectCycle(Node head) {
         //Your code goes here
