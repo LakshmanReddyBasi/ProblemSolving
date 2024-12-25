@@ -4,6 +4,10 @@
 // Example:
 // In the given linked list, there is a cycle starting at position 0, hence we return 0.
 
+
+
+// We can Hashmap for bruteforce Approach
+// Optimal Approach
 public class Solution {
     public static Node firstNode(Node head) {
         // Write your code here.
