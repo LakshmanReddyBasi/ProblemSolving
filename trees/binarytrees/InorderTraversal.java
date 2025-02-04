@@ -57,3 +57,29 @@ class Solution {
         inOrder(root.right,lst);
     }
 }
+
+
+
+
+--------------------------------------------------------------------
+Iterative:
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {        
+        List<Integer> inOrder  = new ArrayList<>();
+        if(root==null) return inOrder;
+        Stack <TreeNode> st = new Stack<>();
+        TreeNode current =root;
+        while(current!=null || !st.isEmpty()){
+            while(current!=null){
+                st.push(current);
+                current = current.left;
+            }
+            current = st.pop();
+            inOrder.add(current.val);
+            current = current.right;
+        }
+
+        return inOrder;
+        
+    }
+}
