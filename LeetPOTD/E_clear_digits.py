@@ -46,7 +46,7 @@ class Solution:
                 l.pop()
             else:
                 l.append(s[i])
-        res=""
+        # res=""
         # for i in l:
         #     res+=(i)
         # return res
