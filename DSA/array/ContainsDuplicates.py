@@ -39,3 +39,9 @@ class Solution:
             else:
                 b.add(i)
         return False
+
+
+
+      (OR)
+
+return len(nums)!=len(set(nums))
